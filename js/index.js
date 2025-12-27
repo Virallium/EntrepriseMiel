@@ -26,13 +26,13 @@ const AfficherProduits=(products)=>{
                         <a href="#">Commander</a>
                     </div>
                 `
-            container.appendChild(dialog)
+            document.body.appendChild(dialog)
             HTMLbox.addEventListener("click", ()=>{
                 dialog.showModal()
                 dialog.classList.add("dialogOpen")
                 dialog.classList.remove("removeDialog")
             })
-            const closed=document.querySelector("#close")
+            const closed=dialog.querySelector("#close")
             closed.addEventListener("click", ()=>{
                 dialog.close()
                 dialog.classList.add("removeDialog")

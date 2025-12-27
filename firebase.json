@@ -1,0 +1,15 @@
+{
+  "hosting": {
+    "public": ".",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [ { "source": "entreprisemiel.firebaseapp.com", "destination": "/index.html" },
+                  { "source": "/catalogue", "destination": "/templates/catalogue.html" },
+                  { "source": "/apropos", "destination": "/templates/apropos.html" },
+                  { "source": "/services", "destination": "/templates/services.html" }],
+    "redirects": [ { "source": "/", "destination": "entreprisemiel.firebaseapp.com", "type": 301 } ]
+  }
+}

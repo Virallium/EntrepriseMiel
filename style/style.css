@@ -505,9 +505,9 @@ footer{
 }
 dialog{
     margin: auto auto;
+    border: none;
 }
 .dialogOpen {
-    display: block;
     transform: translateY(0);
     -webkit-transform: translateY(0);
     -moz-transform: translateY(0);
@@ -518,6 +518,7 @@ dialog{
 .removeDialog{
     display: none;
     pointer-events: none;
+    opacity: 0;
 }
 .dgcontent{
     background:var(--other-color);
